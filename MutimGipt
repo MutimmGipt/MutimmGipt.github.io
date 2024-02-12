@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>Enlace Aleatorio</title>
+</head>
+<body>
+  <a href="https://6x.work/oAM/" id="enlacealeatorio">Enlace Aleatorio</a>
+
+  <script>
+    document.getElementById("enlacealeatorio").addEventListener('click', function(e) {
+        e.preventDefault();
+        enlaceAleatorio()
+    });
+    function enlaceAleatorio() {
+        var direcciones = new Array("https://forms.gle/Ld8yK8eLz6eExAe36", "https://forms.gle/W6H4yn51JEE613N58", "https://forms.gle/C3y5RomPDRSg5hkc9"," https://forms.gle/kyz2P1hKaMbaT41F7", );
+        var aleat = Math.random() * direcciones.length;
+        aleat = Math.floor(aleat);
+        window.location = direcciones[aleat]
+    }
+  </script>
+</body>
+</html>
